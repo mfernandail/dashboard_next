@@ -1,0 +1,16 @@
+.navbar {
+  background-color: var(--sidebar-color);
+  margin: 0;
+  border-bottom: 1px solid var(--border-color);
+
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  height: var(--nav-heigth);
+  align-items: center;
+  margin: 0 20px;
+}
+.links a{
+  margin-left: 20px;
+}
