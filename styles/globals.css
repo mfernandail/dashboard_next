@@ -5,6 +5,17 @@
   --icons-color: #332b2b;
   --hover-sidebar-color: #a7f5ab;
   --border-color: #5f645f18;
+  --margin-section: 10px;
+}
+
+/* noto-sans-jp-regular - latin */
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: local('Noto Sans JP'), url('../public/fonts/noto-sans-jp-v36-latin-regular.woff2') format('woff2'),
+       local('Noto Sans JP'), url('/public/fonts/noto-sans-jp-v36-latin-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 html,
@@ -35,9 +46,9 @@ a {
   }
 }
 /* width */
-::-webkit-scrollbar {
-  /* width: 10px; */
-}
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
 
 /* Track */
 ::-webkit-scrollbar-track {
