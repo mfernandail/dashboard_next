@@ -1,11 +1,14 @@
 :root {
   --width-layout: 160px;
   --nav-heigth: 60px;
+  --sidebar-color: red;
   --sidebar-color: #fff;
   --icons-color: #332b2b;
   --hover-sidebar-color: #a7f5ab;
-  --border-color: #5f645f18;
+  --border-color: #5e645e18;
   --margin-section: 10px;
+  --bar-nav: #fff;
+  --width-bar: 4px;
 }
 
 /* noto-sans-jp-regular - latin */
@@ -45,9 +48,9 @@ a {
   }
 }
 /* width */
-/* ::-webkit-scrollbar {
-  width: 10px;
-} */
+::-webkit-scrollbar {
+  width:  4px;
+}
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -56,7 +59,7 @@ a {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #1d1b31; 
+  background: var(--bar-nav); 
 }
 
 /* Handle on hover */

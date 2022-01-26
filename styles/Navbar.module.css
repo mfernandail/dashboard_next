@@ -7,7 +7,7 @@
   width: 100%;
 
 }
-.list{
+.list {
   display: flex;
   justify-content: space-between;
   height: var(--nav-heigth);
@@ -16,5 +16,10 @@
 }
 .links a{
   margin-left: 20px;
-  
+}
+
+@media (max-width: 900px) {
+  .links {
+    display: none;
+  }  
 }

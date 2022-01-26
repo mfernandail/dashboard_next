@@ -4,11 +4,14 @@
   height: calc(100vh - var(--nav-heigth));
   border-right: 1px solid var(--border-color);
   
-  /* overflow: hidden; */
+  overflow: hidden;
   overflow-y: scroll;  
   position: fixed;
   top: var(--nav-heigth)
+}
 
+.aside:hover {
+  --bar-nav: var(--border-color); 
 }
 .list{
   display: flex;
@@ -41,12 +44,19 @@
   .aside {
     width: 50px;
   }
+  .links {
+    margin-left: 4px;
+  }
+  .links:hover {
+    margin: 0;
+  }
 
   .links span {
     display: none;
   }
   .links  i {
     margin: 0 auto;
+
   }
 }
 /* @media (max-height: 370px) {
