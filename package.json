@@ -8,7 +8,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ag-grid-enterprise": "^26.2.1",
+    "ag-grid-react": "^26.2.0",
+    "mysql": "^2.18.1",
     "next": "12.0.8",
+    "next-connect": "^0.11.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
