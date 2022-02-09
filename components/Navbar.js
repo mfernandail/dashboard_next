@@ -7,7 +7,7 @@ export default function Navbar({title}) {
     <nav className={styles.navbar}>
       <ul className={styles.list}>
         <Link href="/">
-          <a>Logo &gt; {title}</a>
+          <a className={styles.logo}>Logo &gt; {title}</a>
         </Link>
 
         <div className={styles.links}>

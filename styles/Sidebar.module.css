@@ -1,13 +1,12 @@
 .aside {
   background-color: var(--sidebar-color);
-  width: 150px;
+  border-right: 1px solid var(--border-color);  
   height: calc(100vh - var(--nav-heigth));
-  border-right: 1px solid var(--border-color);
-  
   overflow: hidden;
   overflow-y: scroll;  
   position: fixed;
-  top: var(--nav-heigth)
+  top: var(--nav-heigth);
+  width: var(--width-layout);
 }
 
 .aside:hover {
@@ -18,49 +17,39 @@
   flex-direction: column;
   padding-top: 20px;
 }
-
 .links {
+  align-content: center;
   color: var(--icons-color);
   display: flex;
-  align-content: center;
   padding: 5px;
 }
 
 .links i {
-  font-size: 25px;
+  font-size: 20px;
 }
 .links span {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 20px;
   margin-left: 10px;
-  line-height: 25px;
 }
 .links:hover {
   background-color: var(--hover-sidebar-color);
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-
 }
 
 @media (max-width: 900px) {
-  .aside {
-    width: 50px;
-  }
   .links {
     margin-left: 4px;
   }
   .links:hover {
     margin: 0;
   }
-
   .links span {
     display: none;
   }
   .links  i {
     margin: 0 auto;
-
   }
 }
-/* @media (max-height: 370px) {
-  .aside {
-    overflow-y: scroll;  
-  }
-} */

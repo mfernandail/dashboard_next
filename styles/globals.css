@@ -1,14 +1,14 @@
 :root {
   --width-layout: 160px;
   --nav-heigth: 60px;
-  --sidebar-color: red;
+  --margin-section: 10px;
+  --width-scroll: 4px;
+  
   --sidebar-color: #fff;
   --icons-color: #332b2b;
   --hover-sidebar-color: #a7f5ab;
-  --border-color: #5e645e18;
-  --margin-section: 10px;
-  --bar-nav: #fff;
-  --width-bar: 4px;
+  --border-color: #babfc7;
+  --bar-nav: #fff; 
 }
 
 /* noto-sans-jp-regular - latin */
@@ -38,8 +38,13 @@ a {
 }
 .mainContent {
   position: absolute;
-  top: 60px;
+  top: var(--nav-heigth);
   left: var(--width-layout);
+  left: calc(var(--width-layout) - 1px);
+
+  width: calc(100vw - var(--width-layout));
+  height: calc(100vh - var(--nav-heigth));
+  /* overflow-x: scroll; */
 }
 
 @media (max-width: 900px) {
@@ -55,6 +60,7 @@ a {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #fff; 
+  /* background: blue;  */
 }
  
 /* Handle */

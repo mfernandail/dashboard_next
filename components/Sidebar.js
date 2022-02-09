@@ -20,16 +20,16 @@ export default function Sidebar() {
             <span>Projects</span>
           </a>
         </Link>
-        <Link href="/">          
+        <Link href="/add">          
           <a className={styles.links}>
             <i><AiFillDashboard /></i>
-            <span>Home</span>
+            <span>Nuevo</span>
           </a>
         </Link>
-        <Link href="/projects">          
+        <Link href="/clients">          
           <a className={styles.links}>
             <i><AiFillProject /></i>
-            <span>Projects</span>
+            <span>Clients</span>
           </a>
         </Link>
         <Link href="/projects">          
