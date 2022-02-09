@@ -15,6 +15,8 @@ export default function Clients({data}) {
 
 export async function getServerSideProps(context) {
   const develop = process.env.NODE_ENV ?  'http://localhost:3000' : 'https://';
+
+  console.log(develop)
   const res = await fetch(`${develop}/api/client`);
   // const res = await fetch('https://www.ag-grid.com/example-assets/olympic-winners.json')
   const data = await res.json();
