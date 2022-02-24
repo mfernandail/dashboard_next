@@ -14,7 +14,7 @@ export default function GridClients({data}) {
         defaultColDef={{sortable: true, filter: true}}
         rowData={data}
       >
-        {/* <AgGridColumn field="athlete"></AgGridColumn>
+        <AgGridColumn field="athlete"></AgGridColumn>
         <AgGridColumn field="age" editable={true}></AgGridColumn>
         <AgGridColumn field="country" editable={true}></AgGridColumn>
         <AgGridColumn field="year" editable={true}></AgGridColumn>
@@ -23,12 +23,12 @@ export default function GridClients({data}) {
         <AgGridColumn field="gold" editable={true}></AgGridColumn>
         <AgGridColumn field="silver" editable={true}></AgGridColumn>
         <AgGridColumn field="bronze" editable={true}></AgGridColumn>
-        <AgGridColumn field="total" editable={true}></AgGridColumn> */}
+        <AgGridColumn field="total" editable={true}></AgGridColumn>
 
         {/* checkboxSelection={true}  */}
-        <AgGridColumn field="id"></AgGridColumn>
+        {/* <AgGridColumn field="id"></AgGridColumn>
         <AgGridColumn field="nombre" editable={true}></AgGridColumn>
-        <AgGridColumn field="ciudad" editable={true}></AgGridColumn>
+        <AgGridColumn field="ciudad" editable={true}></AgGridColumn> */}
       </AgGridReact>
     </div>
   )
