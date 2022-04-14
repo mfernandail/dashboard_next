@@ -3,9 +3,6 @@ import GridClients from '../components/GridClients';
 import Layout from '../components/Layout';
 
 export default function Clients() {
-
-  // console.log(data)
-
   const [data, setData] = useState([]);
   const url = 'https://www.ag-grid.com/example-assets/olympic-winners.json';
 
@@ -30,16 +27,16 @@ export default function Clients() {
   )
 }
 
-export async function getServerSideProps(context) {
-  const develop = process.env.NODE_ENV ?  'http://localhost:3001' : 'https://';
+// export async function getServerSideProps(context) {
+//   const develop = process.env.NODE_ENV ?  'http://localhost:3001' : 'https://';
 
-  console.log(develop)
-  const res = await fetch(`${develop}/api/client`);
-  // const res = await fetch('https://www.ag-grid.com/example-assets/olympic-winners.json')
-  const data = await res.json();
-  return{
-    props: {
-      data
-    }
-  }
-}
+//   console.log(develop)
+//   const res = await fetch(`${develop}/api/client`);
+//   // const res = await fetch('https://www.ag-grid.com/example-assets/olympic-winners.json')
+//   const data = await res.json();
+//   return{
+//     props: {
+//       data
+//     }
+//   }
+// }
